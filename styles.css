@@ -1,3 +1,96 @@
+/* =========================
+   Base / Reset
+   ========================= */
+
+/* 1) Use a more predictable box model */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 2) Remove default spacing */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* 3) Improve text rendering + baseline layout */
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
 body {
-  background-color: lightblue;
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+/* 4) Media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 5) Form elements inherit fonts */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/* =========================
+   Design Tokens (Variables)
+   ========================= */
+
+:root {
+  /* Fonts */
+  --font-sans: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+
+  /* Colors */
+  --color-bg: #0b0f19;
+  --color-surface: #111827;
+  --color-text: #e5e7eb;
+  --color-muted: #9ca3af;
+  --color-accent: #60a5fa;
+
+  /* Spacing (8px scale) */
+  --space-1: 0.25rem; /* 4px */
+  --space-2: 0.5rem; /* 8px */
+  --space-3: 0.75rem; /* 12px */
+  --space-4: 1rem; /* 16px */
+  --space-6: 1.5rem; /* 24px */
+  --space-8: 2rem; /* 32px */
+
+  /* Width */
+  --max-width: 68rem;
+}
+body {
+  font-family: var(--font-sans);
+  background: var(--color-bg);
+  color: var(--color-text);
+}
+
+/* Optional: make links readable */
+a {
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+a:hover,
+a:focus-visible {
+  text-decoration: underline;
+}
+main {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: var(--space-8) var(--space-4);
+}
+
+section {
+  margin-bottom: var(--space-8);
 }
