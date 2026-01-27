@@ -94,3 +94,28 @@ main {
 section {
   margin-bottom: var(--space-8);
 }
+/* =====================
+   Layout: Flexbox
+===================== */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.hero {
+  max-width: 1100px;
+  margin: 4rem auto;
+  padding: 0 1rem;
+}
