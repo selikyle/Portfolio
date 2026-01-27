@@ -69,6 +69,7 @@ select {
   /* Width */
   --max-width: 68rem;
 }
+
 body {
   font-family: var(--font-sans);
   background: var(--color-bg);
@@ -110,26 +111,22 @@ nav {
 
 .hero {
   display: flex;
-  align-items: center;
-  gap: 2rem;
+  flex-direction: column;
+  gap: var(--space-4);
 }
 
 /* Projects grid system */
 .projects-grid {
   display: grid;
-  gap: 1.25rem;
-
-  /* responive columns */
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-
-  /* keep the section from stretching too wide */
+  gap: var(--space-6);
+  grid-template-columns: repeat (auto-fit,minmax(240px, 1 fr));
 }
 
 .project-card {
-  padding: 1.25rem;
-  border: 1px solid #ddd;
-  border-radius: 12px;
-  background: #fff;
+ padding: var(--space-6);
+ border: 1px solid rgba(229, 231, 235, 0.15)
+ border-radius: 12px;
+ background: var(--color-surface);
 }
 
 .project-card h3 {
