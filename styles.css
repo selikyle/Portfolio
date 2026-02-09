@@ -136,3 +136,20 @@ nav {
 .project-card ul {
   padding-left: 1.25rem;
 }
+
+/* About section */
+
+.about {
+  max-width: 700px;
+  margin: 4rem auto;
+  padding: 0 1rem;
+}
+
+.about h2 {
+  margin-bottom: 1rem;
+}
+
+.about p {
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
