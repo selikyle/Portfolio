@@ -94,6 +94,7 @@ main {
 
 section {
   margin-bottom: var(--space-8);
+  padding: 4rem 1rem;
 }
 /* =====================
    Layout: Flexbox
