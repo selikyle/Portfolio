@@ -176,3 +176,13 @@ nav {
 @media (min-width: 1024px) {
   /* desktop styles */
 }
+
+/* adding hover and focus states */
+.project-card a:hover {
+  opacity: 0.8;
+}
+
+a:focus {
+  outline: 2px solid black;
+  outline-offset: 2px;
+}
