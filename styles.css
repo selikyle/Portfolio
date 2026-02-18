@@ -162,3 +162,13 @@ nav {
 * {
   outline: 1px solid rgba(0, 0, 255, 0.2);
 }
+
+/* Breakpoints */
+
+@media (min-width: 768px) {
+  /* tablet styles */
+}
+
+@media (min-width: 1024px) {
+  /* desktop styles */
+}
