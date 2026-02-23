@@ -187,3 +187,72 @@ a:focus {
   outline: 2px solid black;
   outline-offset: 2px;
 }
+
+/* Selina CSS override */
+
+* {
+  margin: 10px;
+}
+
+h1 {
+  color: #ff69b4;
+  text-align: center;
+  font-family: courier, monospace;
+  font-weight: 800;
+}
+
+nav,
+a {
+  color: white;
+  font-family: courier, monospace;
+}
+
+h2 {
+  color: #ff69b4;
+  font-family: courier, monospace;
+}
+
+.hero {
+  font-family: courier, monospace;
+  text-align: center;
+}
+
+p {
+  font-weight: 800;
+}
+
+.projects {
+  text-align: center;
+}
+
+.project-card {
+  font-family: courier, monospace;
+}
+
+ul {
+  display: inline-block;
+}
+
+.about {
+  text-align: center;
+  font-family: courier, monospace;
+}
+
+.skills {
+  text-align: center;
+  font-family: courier, monospace;
+  padding: 25px;
+}
+
+.contact {
+  text-align: center;
+  padding: 25px;
+  color: #ff69b4;
+}
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  font-family: courier, monospace;
+}
